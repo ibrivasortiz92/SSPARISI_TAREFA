@@ -1,0 +1,22 @@
+{
+  "name": "interview_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.15",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2",
+    "ts-node": "^10.4.0",
+    "typeorm": "^0.2.41",
+    "typescript": "^4.5.5"
+  }
+}
