@@ -1,10 +1,6 @@
-import express from 'express';
 import {createConnection} from 'typeorm';
 import {User} from './entities/User';
-import {apiRouter} from './routes/api_router';
-
-// INIT
-const app = express();
+import {app} from './routes/app';
 
 // MAIN
 const main = async() => {
@@ -20,12 +16,6 @@ const main = async() => {
     // SERVER SETTINGS
     .then(() => {
         console.log('Connected to database');
-
-        // MIDDLEWARE
-        app.use(express.json());
-
-        // ROUTES
-        app.use('/api', apiRouter);
 
         app.listen(5000,()=>{
             console.log(`Server listening at http://localhost:5000`);
